@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>KINO. Moje Hobby</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="icon" type="image/x-icon" href="img/logo.ico">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+
+    <body onload="formContent(); visitedNews()">
+        <nav>
+            <div id="menu">
+                <img id="site_logo" src="img/logo2.png" alt="logo">
+                <ul>
+                    <li><div id="form_link"><a href="form.html" >Ankieta</a></div></li>
+                    <li>Galeria
+                        <div class="dropdown">
+                        <ul>
+                        <li><a href="gallery_films.html">Filmy</a></li>
+                        <li><a href="gallery_series.html">Seriale</a></li>
+                        </ul>
+                    </div>
+                    </li>
+                    <li><a href="rank.html" >Ranking</a></li>
+                    <li><a href="news.html">Aktualności</a></li>
+                    <li><a href="index.html">Strona główna</a></li>
+                </ul>
+                <div style="clear: both;"></div>
+            </div>
+        </nav>
+        <main>    
+            <article id="news">
+                    <header><h1 class="page_header">Aktualności</h1></header>
+                    <br><br>
+                    <section> 
+                        <img class="n_img" src="img/news/sandman.jpg" alt="sandman">
+                        <div class="n_text">
+                        <h2>Sandman - Drugi sezon oficjalnie potwierdzony</h2>
+                        <p>
+                            Oficjalnie potwierdzono kontynuację hitu Netflixa - drugi sezon serialu "Sandman" będącego adaptacją komiksu Neila Gaimana.<br> "Po latach Morfeusz, Król Snów, uwalnia się i wyrusza w podróż między światami, aby odnaleźć skradzione mu artefakty i odzyskać dawną moc."
+                        </p>
+                        </div>
+                        <div style="clear:both"></div>
+                    </section>
+                    <section> 
+                        <img class="n_img" src="img/news/tlou.jpg" alt="the last of us">
+                        <div class="n_text">
+                        <h2>The Last of us - ujawniono datę premiery</h2>
+                        <p>
+                            Data premiery serialu The Last of Us została przez pomyłkę ujawniona na mediach społecznościowych HBO Max.<br>
+                            Tytuł ma zadebiutować 15 stycznia 2023 roku.
+                        </p>
+                        </div>
+                        <div style="clear:both"></div>
+                    </section>
+                    <section id="last_section"> 
+                        <img class="n_img" src="img/news/witcher.jpg" alt="witcher">
+                        <div class="n_text">
+                        <h2>Wiedźmin - Henry Cavil odchodzi z serialu</h2>
+                        <p>
+                            Aktor Henry Cavil wcielający się w postać Geralta z Rivii - głownego bohatera serialu "Wiedźmin", ogłosił na Instagramie, że po 3 sezonie serialu odchodzi z serialu.<br>
+                            Jego rolę przejmie australijski aktor Liam Hemsworth.
+                        </p>
+                        </div>
+                        <div style="clear:both"></div>
+                    </section>
+                    <a id="dis_arrow" href="#last_section" onclick="arrow_click()"><svg class="svg_arrow2" width="24" height="24" viewBox="0 0 24 24"><path d="M12 3l12 18h-24z"/></svg></a>
+            </article>
+        </main>
+        <footer>
+                Kino. Moje Hobby &copy; Wszelkie prawa zastrzeżone
+                <a href="https://www.vecteezy.com/free-vector/cinema-logo">Cinema Logo Vectors by Vecteezy</a>
+        </footer>
+    </body>
+</html>

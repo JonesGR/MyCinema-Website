@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>KINO. Moje Hobby</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="icon" type="image/x-icon" href="img/logo.ico">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+
+    <body onload="formContent(); visitedGallery()">
+        <nav>
+            <div id="menu">
+                <img id="site_logo" src="img/logo2.png"  alt="logo">
+                <ul>
+                    <li><div id="form_link"><a href="form.html" >Ankieta</a></div></li>
+                    <li>Galeria
+                        <div class="dropdown">
+                        <ul>
+                        <li><a href="gallery_films.html">Filmy</a></li>
+                        <li><a href="gallery_series.html">Seriale</a></li>
+                        </ul>
+                    </div>
+                    </li>
+                    <li><a href="rank.html" >Ranking</a></li>
+                    <li><a href="news.html">Aktualności</a></li>
+                    <li><a href="index.html">Strona główna</a></li>
+                </ul>
+                <div style="clear: both;"></div>
+            </div>
+        </nav>
+        <main> 
+            <article>
+                <header>
+                    <h1 class="page_header">Galeria Filmowa</h1>
+                </header>
+                    <div id="gallery">
+                        <div class="g_element">
+                            <figure><a target="_blank" href="img/gallery/fight_club.jpg"><img class="g_img" src="img/gallery/fight_club.jpg" alt="Fight Club"></a><figcaption>
+                                Fight Club (1999)
+                            </figcaption></figure>
+                        </div>
+                        <div class="g_element">
+                            <figure><a target="_blank" href="img/gallery/alien1_20th-century-fox.jpg"><img class="g_img" src="img/gallery/alien1_20th-century-fox.jpg" alt="Obcy"></a><figcaption>
+                                Obcy - 8 pasażer "Nostromo" (1979)
+                            </figcaption></figure>
+                        </div>
+                        <div class="g_element">
+                            <figure><a target="_blank" href="img/gallery/apocalypse_now.jpg"><img class="g_img" src="img/gallery/apocalypse_now.jpg" alt="Czas Apokalipsy"></a><figcaption>
+                                Czas Apokalipsy (1979)
+                            </figcaption></figure>
+                        </div>
+                        <div class="g_element">
+                            <figure><a target="_blank" href="img/gallery/esb.jpg"><img class="g_img" src="img/gallery/esb.jpg" alt="Star Wars"></a><figcaption>
+                                Gwiezdne Wojny - Imperium kontratakuje (1980)
+                            </figcaption></figure>
+                        </div>
+                        <div class="g_element">
+                            <figure><a target="_blank" href="img/gallery/space_odyssey.jpg"><img class="g_img" src="img/gallery/space_odyssey.jpg" alt="Odyseja Kosmiczna"></a><figcaption>
+                                2001: Odyseja kosmiczna (1968)
+                            </figcaption></figure>
+                        </div>
+                    </div>
+            </article>
+        </main>
+        <footer>
+                Kino. Moje Hobby &copy; Wszelkie prawa zastrzeżone
+                <a href="https://www.vecteezy.com/free-vector/cinema-logo">Cinema Logo Vectors by Vecteezy</a>
+        </footer>
+    </body>
+</html>

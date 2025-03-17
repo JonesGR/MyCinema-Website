@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>KINO. Moje Hobby</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="icon" type="image/x-icon" href="img/logo.ico">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="script.js"></script>
+    
+        <link href="jquery-ui.css" rel="stylesheet">
+
+        
+    </head>
+
+    <body onload="visitedForm()">
+        <nav>
+            <div id="menu">
+                <img id="site_logo" src="img/logo2.png"  alt="logo">
+                <ul>
+                    <li><a href="form.html" >Ankieta</a></li>
+                    <li>Galeria
+                        <div class="dropdown">
+                        <ul>
+                        <li><a href="gallery_films.html">Filmy</a></li>
+                        <li><a href="gallery_series.html">Seriale</a></li>
+                        </ul>
+                    </div>
+                    </li>
+                    <li><a href="rank.html" >Ranking</a></li>
+                    <li><a href="news.html">Aktualności</a></li>
+                    <li><a href="index.html">Strona główna</a></li>
+                </ul>
+                <div style="clear: both;"></div>
+            </div>
+        </nav>
+        <main> 
+            <article id="article">
+                <header>
+                    <h1 class="page_header">Filmowa ankieta</h1>
+                </header>
+                <svg id="svg_logo" width="400" height="400">
+                    <circle cx="200" cy="200" r="100" fill="#bf0a0a"/>
+                    <circle cx="200" cy="200" r="15" fill="#16151d"/>
+                    <circle cx="265" cy="200" r="30" fill="#16151d"/>
+                    <circle cx="135" cy="200" r="30" fill="#16151d"/>
+                    <circle cx="200" cy="265" r="30" fill="#16151d"/>
+                    <circle cx="200" cy="135" r="30" fill="#16151d"/>
+
+                    <circle cx="247" cy="247" r="10" fill="#16151d"/>
+                    <circle cx="153" cy="153" r="10" fill="#16151d"/>
+                    <circle cx="153" cy="247" r="10" fill="#16151d"/>
+                    <circle cx="247" cy="153" r="10" fill="#16151d"/>
+                </svg><br>
+                Podziel się z nami swoją miłością do kina! Poleć swoje ulubione filmy i seriale!
+                <br><br>               
+                <form name="cinema_form" action="/cinema_form.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+                    <label for="fname">Imię:</label><br>
+                    <input type="text" id="fname" name="fname" required><br><br>
+
+                    Co częściej oglądasz?<br>
+                    <div id="radioset">
+                        <input type="radio" id="movie" name="movie_show" value="Film">
+                        <label for="movie">Film</label>
+                        <input type="radio" id="show" name="movie_show" value="Serial">
+                        <label for="show">Serial</label>
+                    </div>
+                    <br><br>
+
+                    Ile razy w roku chodzisz do kina?<br>
+                    
+                    
+                        <input type="radio" id="up2" name="cinema_per_year" value="1-2">
+                        <label for="up2">1-2</label>
+                        <input type="radio" id="3up5" name="cinema_per_year" value="3-5">
+                        <label for="3up5">3-5</label>
+                        <input type="radio" id="6up10" name="cinema_per_year" value="6-10">
+                        <label for="6up10">6-10</label>
+                        <input type="radio" id="11up20" name="cinema_per_year" value="11-20">
+                        <label for="6up10">11-20</label>
+                        <input type="radio" id="more20" name="cinema_per_year" value=">20">
+                        <label for="6up10">>20</label><br><br>    
+
+
+                    
+                    <label for="last_movie">Na jakim filmie byłeś/aś ostatnio w kinie?</label><br>
+                    <input type="text" id="last_movie" name="last_movie" required><br><br>
+
+
+                    Jakie są twoje ulubione gatunki filmowe?<br>
+                    
+
+                    <input type="checkbox" id="genre1" name="genre1" value="Action">
+                    <label for="genre1">Akcja</label>
+                    <input type="checkbox" id="genre2" name="genre2" value="Comedy">
+                    <label for="genre2">Komedia</label>
+                    <input type="checkbox" id="genre3" name="genre3" value="Drama">
+                    <label for="genre3">Dramat</label>
+                    <input type="checkbox" id="genre4" name="genre4" value="Thriller">
+                    <label for="genre4">Thriller</label>
+                    <input type="checkbox" id="genre5" name="genre5" value="Horror">
+                    <label for="genre5">Horror</label>
+                    <input type="checkbox" id="genre6" name="genre6" value="Sci-fi">
+                    <label for="genre6">Science-fiction</label>
+                    <input type="checkbox" id="genre7" name="genre7" value="Fantasy">
+                    <label for="genre7">Fantasy</label>
+                    <input type="checkbox" id="genre8" name="genre8" value="Western">
+                    <label for="genre8">Western</label>
+                    <input type="checkbox" id="genre9" name="genre9" value="Document">
+                    <label for="genre9">Dokument</label><br><br>
+
+                    <label for="univ">Które z podanych uniwersów filmowych lubisz najbardziej?</label><br>
+                    <select id="univ" name="univ">
+                        <option value="blank">------</option>
+                        <option value="Marvel">Marvel</option>
+                        <option value="DC">DC</option>
+                        <option value="Star Wars">Gwiezdne Wojny</option>
+                        <option value="LOTR">Władca Pierścieni</option>
+                        <option value="Harry Potter">Harry Potter</option>
+                    </select><br><br>
+
+                    Poleć swoje ulubione filmy! (max 3)<br>
+                    <textarea name="fav_movies" maxlength="100" rows="3" cols="30"></textarea><br><br>
+
+                    <input type="reset" value="Resetuj">
+                    <input type="submit" value="Wyślij" onclick="sendForm(), error()"><br><br>           
+                </form>
+            </article>
+        </main>
+        <footer>
+                Kino. Moje Hobby &copy; Wszelkie prawa zastrzeżone
+                <a href="https://www.vecteezy.com/free-vector/cinema-logo">Cinema Logo Vectors by Vecteezy</a>
+        </footer>
+    <script src="external/jquery/jquery.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $( "#radioset" ).buttonset();
+        $('#dialog').dialog();
+    </script>
+   </body>
+
+</html>

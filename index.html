@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>KINO. Moje Hobby</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="icon" type="image/x-icon" href="img/logo.ico">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+
+    <body onload="formContent(); formContent2(); changeBorderColor()">
+        <nav>
+            <div id="menu">
+                <img id="site_logo" src="img/logo2.png" alt="logo">
+                <ul>
+                    <li><div id="form_link"><a href="form.html" >Ankieta</a></div></li>
+                    <li>Galeria
+                        <div class="dropdown">
+                        <ul>
+                        <li><a href="gallery_films.html">Filmy</a></li>
+                        <li><a href="gallery_series.html">Seriale</a></li>
+                        </ul>
+                    </div>
+                    </li>
+                    <li><a href="rank.html">Ranking</a></li>
+                    <li><a href="news.html">Aktualności</a></li>
+                    <li><a href="index.html">Strona główna</a></li>
+                </ul>
+                <div style="clear: both;"></div>
+            </div>
+        </nav>
+        <main>    
+            <article>
+                    <header>Moje kino</header>
+                    <h5 class="m_paragraph">
+                       Witaj na Moje Kino, raju dla prawdziwego kinomaniaka! Znajdziesz tutaj aktualności z Hollywood, ciekawostki ze świata filmu oraz subiektywne rekomendacje filmowo/serialowe. Zapraszam!
+                    </h5>
+                    <br><br>
+                    <div id="centr">
+                        <div id="m_element_news" class="m_element">
+                            <figure><a href="news.html"><img class="m_img" src="img/gallery/avatar2.jpg" alt="News"><div class="m_link">Aktualności</div></a></figure>
+                        </div>
+                        <div id="m_element_gallery" class="m_element">
+                            <figure><a href="gallery_films.html"><img class="m_img" src="img/gallery/joker.jpg" alt="Gallery"><div class="m_link">Galeria</div></a></figure>
+                        </div>
+                        <div id="m_element_rank" class="m_element">
+                            <figure><a href="rank.html"><img class="m_img" src="img/gallery/whiplash.jpg" alt="Rank"><div class="m_link">Ranking</div></a></figure>                       
+                        </div>
+                        <div id="m_element_form" class="m_element">
+                            <figure><a href="sent_form.html"><img class="m_img" src="img/gallery/darkest_hour.jpg" alt="Form"><div class="m_link">Ankieta</div></a></figure>
+                        </div>
+                    </div>
+            </article>
+        </main>
+        <footer>
+                Kino. Moje Hobby &copy; Wszelkie prawa zastrzeżone.
+                <a href="https://www.vecteezy.com/free-vector/cinema-logo">Cinema Logo Vectors by Vecteezy</a>
+        </footer>
+    </body>
+</html>
